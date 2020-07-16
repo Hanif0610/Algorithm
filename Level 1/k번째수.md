@@ -3,7 +3,7 @@
 ```java
 import java.util.*;
 
-class Solution8 {
+class Solution {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         List<Integer> arr = new ArrayList<>();

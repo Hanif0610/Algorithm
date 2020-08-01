@@ -1,6 +1,7 @@
-# 탑
+package Level2.top;
 
-```java
+import java.util.Arrays;
+
 class Solution {
     public int[] solution(int[] heights) {
         int[] answer = new int[heights.length];
@@ -20,4 +21,12 @@ class Solution {
         return answer;
     }
 }
-```
+
+public class Top {
+    public static void main(String[] args) {
+        int[] arr = {6,9,5,7,4};
+        Solution solution = new Solution();
+        int[] result = solution.solution(arr);
+        System.out.println(Arrays.toString(result));
+    }
+}

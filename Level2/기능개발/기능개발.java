@@ -1,7 +1,7 @@
-# 기능개발
+package Level2.기능개발;
 
-```java
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
@@ -40,4 +40,12 @@ class Solution {
         return answer;
     }
 }
-```
+
+public class 기능개발 {
+    public static void main(String[] args) {
+        int[] progress = {93,30,55};
+        int[] speeds = {1,30,5};
+        Solution solution = new Solution();
+        System.out.println(Arrays.toString(solution.solution(progress, speeds)));
+    }
+}

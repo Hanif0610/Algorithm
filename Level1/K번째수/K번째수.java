@@ -1,6 +1,5 @@
-# k번째수
+package Level1.K번째수;
 
-```java
 import java.util.*;
 
 class Solution {
@@ -18,4 +17,12 @@ class Solution {
         return answer;
     }
 }
-```
+
+public class K번째수 {
+    public static void main(String[] args) {
+        int[] arr = {1, 5, 2, 6, 3, 7, 4};
+        int[][] command = {{2,5,3},{4,4,1},{1,7,3}};
+        Solution solution = new Solution();
+        System.out.println(Arrays.toString(solution.solution(arr, command)));
+    }
+}

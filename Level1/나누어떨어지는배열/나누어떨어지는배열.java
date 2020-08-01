@@ -1,9 +1,11 @@
-# 나누어 떨어지는 배열
+package Level1.나누어떨어지는배열;
 
-```java
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
-class Solution10 {
+class Solution {
     public int[] solution(int[] arr, int divisor) {
         List<Integer> array = new ArrayList<>();
         for(int i = 0; i < arr.length; i++) {
@@ -18,4 +20,12 @@ class Solution10 {
         return answer;
     }
 }
-```
+
+public class 나누어떨어지는배열 {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] arr = {5, 9, 7, 10};
+        int num = 5;
+        System.out.println(Arrays.toString(solution.solution(arr, num)));
+    }
+}

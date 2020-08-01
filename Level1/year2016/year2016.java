@@ -1,6 +1,5 @@
-# 2016년
+package Level1.year2016;
 
-```java
 class Solution {
     public String solution(int a, int b) {
         String[] arr = {"FRI","SAT","SUN","MON","TUE","WED","THU"};
@@ -16,4 +15,10 @@ class Solution {
         return arr[day-1];
     }
 }
-```
+
+public class year2016 {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.solution(5, 24));
+    }
+}

@@ -1,6 +1,5 @@
-# 시저암호
+package Level1.시저암호;
 
-```java
 class Solution {
     public String solution(String s, int n) {
         String answer = "";
@@ -22,4 +21,12 @@ class Solution {
         return answer;
     }
 }
-```
+
+public class 시저암호 {
+    public static void main(String[] args) {
+        String s = "a B z";
+        int n = 4;
+        Solution solution = new Solution();
+        System.out.println(solution.solution(s, n));
+    }
+}

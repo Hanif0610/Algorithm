@@ -16,11 +16,11 @@ class Solution {
                 }
             }
         }
-        String s_answer = "";
-        for(int i = 0; i < arr.length; i++) {
-            s_answer += Integer.toString(arr[i]);
+        StringBuilder s_answer = new StringBuilder();
+        for (int j : arr) {
+            s_answer.append(Integer.toString(j));
         }
-        return Long.parseLong(s_answer);
+        return Long.parseLong(s_answer.toString());
     }
 }
 

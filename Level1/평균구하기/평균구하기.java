@@ -1,12 +1,10 @@
 package Level1.평균구하기;
 
+import java.util.Arrays;
+
 class Solution {
     public double solution(int[] arr) {
-        double answer = 0;
-        for (int num : arr) {
-            answer += num;
-        }
-        return answer/arr.length;
+        return Arrays.stream(arr).average().orElse(0);
     }
 }
 

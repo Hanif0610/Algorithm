@@ -1,37 +1,17 @@
 package Level2.전화번호부;
 
-import java.util.*;
+import java.util.Arrays;
 
 class Solution {
     public boolean solution(String[] phone_book) {
-        boolean answer = true;
-        Map<String, Integer> map = new LinkedHashMap<>();
-        int cnt = 0;
-        for (String string : phone_book) {
-            map.put(string, cnt++);
-        }
+        Arrays.sort(phone_book);
 
-        Iterator<String> keys = map.keySet().iterator();
-        for (int i = 1; i < map.size(); i++) {
-            String key = keys.next();
-            for (int j = i; j < map.size(); j++) {
-                if (getKey(map, j).startsWith(key)) {
-                    answer = false;
-                    break;
-                }
-            }
-            if (!answer) break;
-        }
-        return answer;
-    }
-
-    public static <K, V> K getKey(Map<K, V> map, V value) {
-        for (K key : map.keySet()) {
-            if (value.equals(map.get(key))) {
-                return key;
+        for(int i = 0; i < phone_book.length - 1; i++) {
+            if(phone_book[i+1].startsWith(phone_book[i])) {
+                return false;
             }
         }
-        return null;
+        return true;
     }
 }
 

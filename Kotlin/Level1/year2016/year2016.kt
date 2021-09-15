@@ -1,4 +1,4 @@
-package year2016
+package Level1.year2016
 
 class Solution {
     fun solution(a: Int, b: Int): String {
@@ -14,5 +14,5 @@ class Solution {
 
 fun main(args: Array<String>) {
     val solution = Solution()
-    println(solution.solution(2, 1))
+    println(solution.solution(5, 24))
 }

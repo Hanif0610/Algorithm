@@ -2,11 +2,7 @@ package Level1.수박수박수박수박
 
 class Solution {
     fun solution(n: Int): String {
-        var answer = ""
-        for(i in 1 .. n) {
-            answer += if(i % 2 != 0) "수" else "박"
-        }
-        return answer
+        return (1..n).joinToString("") { i -> if (i % 2 != 0) "수" else "박" }
     }
 }
 

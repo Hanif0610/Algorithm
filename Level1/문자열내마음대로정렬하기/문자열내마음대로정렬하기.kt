@@ -15,7 +15,7 @@ class Solution {
             }
         }
         return strings
-        // var list =  strings.sortedWith(compareBy({ it[n] }, { it }))
+        // var list =  strings.sortedWith(compareBy({ it[n] }, { it })) //조건 A먼저 정렬 조건 B에따라 정렬
         //        return list.toTypedArray()
     }
 }

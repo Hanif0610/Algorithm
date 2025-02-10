@@ -1,3 +1,5 @@
+package Level1.소수_만들기
+
 class Solution {
     fun solution(nums: IntArray): Int {
         var answer = mutableListOf<Int>()
